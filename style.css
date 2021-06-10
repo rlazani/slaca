@@ -83,8 +83,14 @@ color: #ED7839;
     padding: 20px;
 }
 
-.thirdRow {
-    
+.buttonsDiversos button {
+    background: #ED7839;
+    border-radius: 4px; 
+    color: white;
+}
+
+.thirdRow img {
+    width: 98%;
     
 }
 
@@ -102,6 +108,10 @@ color: #ED7839;
 
 .discussões {
     padding: 50px;
+}
+
+footer img {
+    width: 90%;
 }
 
 
