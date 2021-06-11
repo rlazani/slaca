@@ -2,7 +2,7 @@
 
 
 
-/* Resumo Expandido*/
+/* Resumo Expandido - Coluna Esquerda*/
 
 .colunaEsquerda {
    
@@ -43,15 +43,15 @@
     font-size: 15px;
 }
 
+/*Fim Resumo Expandido / Coluna Esquerda */
 
 
 
-/*Fim Resumo Expandido */
+/* COLUNA DIREITA */
 
 .colunaDireita {
     margin-left: 220px;
 }
-
 
 /* Header */
 
@@ -71,7 +71,7 @@ header {
     font-weight: 400;
     font-size: 14px; 
     color: #725C5C;
-    line-height: 16px;
+    line-height: 10px;
 }
 
 .dois {
@@ -88,43 +88,66 @@ header {
     font-weight: 400;
     font-size: 14px; 
     color: #725C5C;
-    line-height: 16px;
+    line-height: 3px;
     
 }
 
+.languageButton {
+    margin-top: 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px; 
+    width: 97px;
+    height: 34px;  
+    box-sizing: border-box;
+}
+
+.quatro, .cinco {
+    font-family: Quicksand;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1px;
+    text-align: right;
+}
+
+.bemVindo {
+    margin-top: 25px;
+}
+
+.fotoHeader img {
+    border-radius: 50%;
+    width: 85%;
+    margin-top: 20px;
+}
 
 
 
 /* Content */
 
-.secondRow {
-    
-    
-}
 
-/* título do trabalho */
+/*SECOND ROW*/
+
 .titulo {
-
-padding: 20px;
-
-
+padding-left: 36px;
+padding-top: 15px;
 font-family: Roboto;
 font-style: normal;
 font-weight: 900;
 font-size: 20px;
 line-height: 125%;
-
-
 letter-spacing: 0.05em;
-
 color: #ED7839;
-
 }
 
+.citacao {
+    margin-top: 10px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 25px;
+    color: #ED7839;
+}
 
 .buttonsDiversos {
-    
-    padding: 20px;
+    padding: 15px;
 }
 
 .buttonsDiversos button {
@@ -133,26 +156,68 @@ color: #ED7839;
     color: white;
 }
 
+
+/*THIRD ROW*/
+
 .thirdRow img {
     width: 98%;
     
 }
 
 .video {
-    padding: 50px;
+    padding-left: 36px;
 }
 
-.detalhes {
-    padding: 50px;
+.card-header {
+    background-color: #FDF1EB;
+    border-radius: 3px 3px 0px 0px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
 }
+
+.detalhes p {
+    font-family: Quicksand;
+    font-weight: 400;
+}
+
+.notas {
+    font-size: 12px;
+    color: gray;
+}
+
+
+
+
+
+/*FIM THIRD ROW */
+
+
 
 .resumo {
-    padding: 50px;
+    margin-left: 24px;
+    margin-top: 15px;
 }
 
-.discussões {
-    padding: 50px;
+.resumo p {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: #5C5C5C;
 }
+
+
+
+.discussões {
+    margin-left: 24px;
+    margin-top: 15px;
+  
+}
+
 
 footer img {
     width: 90%;
