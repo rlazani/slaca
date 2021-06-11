@@ -210,6 +210,35 @@ color: #ED7839;
     color: #5C5C5C;
 }
 
+.expandeResumo, .expandeResumo:hover {
+    text-decoration: none;
+    color:black;
+}
+
+
+.expansaoResumo {
+    margin-top: -5px;
+    margin-left: 24px;
+    border-top: none;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: #5C5C5C;
+}
+
+.borda {
+    border-top: none;
+}
+
+
+
+
+
+
+
 
 
 .discussões {
