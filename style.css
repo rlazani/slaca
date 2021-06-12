@@ -338,6 +338,10 @@ footer img {
     width: 90%;
 }
 
+.ghost {
+    display:none;
+}
+
 /* Media Query
 
   xs: 0,
@@ -351,7 +355,7 @@ footer img {
 
 @media (max-width: 1400px) {
     body {
-        background-color: yellow;
+        background-color: lightyellow;
     }
 
     .fotoHeader, .icones {
@@ -366,7 +370,7 @@ footer img {
 
 @media (max-width: 1300px) {
     body {
-        background-color: green;
+        background-color: rgb(207, 243, 207);
     }
 
     .um, .tres, .notas {
@@ -382,7 +386,7 @@ footer img {
 
 @media (max-width: 1250px) {
     body {
-        background-color: grey;
+        background-color: lightgoldenrodyellow;
     }
 
     .detalhesHeader, .citacao  {
@@ -421,7 +425,7 @@ footer img {
 
     @media (max-width: 990px) {
         body {
-            background-color: blue;
+            background-color: lightblue;
            
         }
         
@@ -433,7 +437,33 @@ footer img {
             width: 250px;
         }
 
+       .cartaoDetalhes {
+           margin-top: 15px;
+           margin-left: 25px;
+           width: 96%;
+       }
+
+       footer {
+           padding-bottom: 15px;
+       }
+
+       .colunaEsquerda {
+           visibility: collapse;
+       }
+
+       .ghost {
+           display:inline;
+          
+           float: left;
+       }
+
        
+
+       .col {
+          margin-left: -10px;
+       }
+
+      
     
         
     
