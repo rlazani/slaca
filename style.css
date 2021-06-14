@@ -2,7 +2,7 @@
 
 
 
-/* Resumo Expandido - Coluna Esquerda*/
+/*Coluna Esquerda*/
 
 .colunaEsquerda {
     width: 220px;
@@ -29,8 +29,6 @@
    padding-top: 12px;
    font-family: 'Roboto', sans-serif;
    font-weight: 400;
-    
-     
 }
 
 .logo img {
@@ -42,11 +40,13 @@
     font-size: 15px;
 }
 
-/*Fim Resumo Expandido / Coluna Esquerda */
+.list-group-item:hover {
+    background-color: #FDF1EB;
+    border-left: 5px solid #ED7839;
+}
 
 
-
-/* COLUNA DIREITA */
+/* Coluna Direita */
 
 .colunaDireita {
     margin-left: 220px;
@@ -56,39 +56,40 @@
 
 header {
     background: #FDF1EB;
-    height: 87px;
+    height: 68px;
 }
 
 .colHeader {
     padding-left: 36px;
-    padding-top: 5px;
-    
+      
 }
 
 .um {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 14px; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 8px;
     color: #725C5C;
-    line-height: 10px;
+    padding-top: 5px;
 }
 
 .dois {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: normal;
+    font-style: normal;
     font-size: 22px; 
     color: #725C5C;
-    line-height: 16px;
-    
+    line-height: 8px;
 }
 
 .tres {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 14px; 
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px; 
     color: #725C5C;
-    line-height: 3px;
-    
+    line-height: 8px;
 }
 
 .languageButton {
@@ -431,6 +432,7 @@ footer img {
 
     .dois {
         margin-top: 30px;
+        font-size: 20px;
     }
     
 }
@@ -449,6 +451,7 @@ footer img {
     .col {
         width: 70%;
     }
+
 }
 
 @media (max-width: 1200px) {
@@ -462,46 +465,51 @@ footer img {
     }
 
     .dois {
-        margin-left: 100px;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: bold;
+        line-height: 1.3;
     }
 }
 
-
-    @media (max-width: 990px) {
+@media (max-width: 990px) {
         
-        
-        .final p {
-            display: none;
+    .final p {
+        display: none;
         }
 
-        .final img {
-            width: 250px;
+    .final img {
+        width: 250px;
         }
 
-       .cartaoDetalhes {
-           margin-top: 15px;
-           margin-left: 25px;
-           width: 96%;
-       }
+    .cartaoDetalhes {
+        margin-top: 15px;
+        margin-left: 25px;
+        width: 96%;
+    }
 
-       footer {
-           padding-bottom: 15px;
-       }
+    footer {
+        padding-bottom: 15px;
+    }
 
-       .colunaEsquerda {
-           display:none;
-       }
+    .colunaEsquerda {
+        display:none;
+    }
 
-       .ghost {
-           display:inline;
-           float: left;
-       }
+    .ghost {
+        display:inline;
+        float: left;
+    }
 
-       .col {
-          margin-left: -10px;
-       }
+    .col {
+        margin-left: -15px;
+    }
     
 }
 
+@media (max-width: 970px) {
+
+    .dois {
+        line-height: 1.3;
+        font-size: 13px;
+    }
+}
