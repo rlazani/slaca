@@ -231,17 +231,20 @@ color: #ED7839;
     border-top: none;
 }
 
-.discussões {
+
+
+/*Discussões*/
+.discussoes {
     margin-left: 24px;
     margin-top: 15px;
     margin-bottom: 20px;
 }
 
-.discussões .card-body {
+.discussoes .card-body {
     text-align: center;
 }
 
-.discussões h5 {
+.discussoes h5 {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -260,7 +263,8 @@ color: #ED7839;
     width: 500px; 
 }
 
-.discussões p {
+.temDuvida {
+    margin-top: 15px;
     font-family: Quicksand;
     font-style: normal;
     font-weight: normal;
@@ -270,21 +274,75 @@ color: #ED7839;
     color: #595959;
 }
 
+
+.escreveTopico {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ED7839;
+    float: left; 
+}
+
 .divisoria {
     height: 0px;
     left: 16px;
     top: 1395px;
     border: 1px solid #E7E7E7;
+    margin-top: 30px;
 }
 
-.discussões buttom {
+
+
+.discussoes buttom {
     width: 133px;
-    height: 32px;
+    height: 42px;
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    color: white;
+   
+}
+
+.expansaoTopico p {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5C5C5C;
+}
+
+.retanguloTopico {
+    height: 41px;
+    background-color: #E7E7E7;
+    border-radius: 4px;
+    width: 99.9%;
+}
+
+
+
+.enviarTopico {
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    color: white;
+    float: right;
+}
+
+#buttomDiscussao {
+    width: 200px;
+    height: 42px;
     background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
     border-radius: 4px;
     color: white;
 }
+
+
+/*FOOTER*/
 
 .interno {
     margin-top: 15px;
@@ -339,24 +397,18 @@ footer img {
 }
 
 .ghost {
-    display:none;
+    display: none;
 }
 
+
+
 /* Media Query
-
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-
 */
 
+
+
 @media (max-width: 1400px) {
-    body {
-        background-color: lightyellow;
-    }
+    
 
     .fotoHeader, .icones {
         display: none;
@@ -366,12 +418,12 @@ footer img {
         font-size: 13px;
     }
 
+    
+
 }
 
 @media (max-width: 1300px) {
-    body {
-        background-color: rgb(207, 243, 207);
-    }
+   
 
     .um, .tres, .notas {
         display: none;
@@ -385,10 +437,7 @@ footer img {
 
 
 @media (max-width: 1250px) {
-    body {
-        background-color: lightgoldenrodyellow;
-    }
-
+    
     .detalhesHeader, .citacao  {
         display: none;
     }
@@ -403,11 +452,7 @@ footer img {
 }
 
 @media (max-width: 1200px) {
-    body {
-        background-color: lightgrey;
-    }
-
-
+   
     .autores, .icones, .divisoria, .comentario, .doi {
         display: none;
     }
@@ -421,13 +466,11 @@ footer img {
         font-size: 15px;
         font-weight: bold;
     }
+}
 
 
     @media (max-width: 990px) {
-        body {
-            background-color: lightblue;
-           
-        }
+        
         
         .final p {
             display: none;
@@ -448,37 +491,17 @@ footer img {
        }
 
        .colunaEsquerda {
-           visibility: collapse;
+           display:none;
        }
 
        .ghost {
            display:inline;
-          
            float: left;
        }
-
-       
 
        .col {
           margin-left: -10px;
        }
-
-      
-    
-        
     
 }
-
-
-
-
-
-
-/*
-@media (max-width: 767.98px) {
-    .colunaEsquerda {
-      display:none;
-    }
-  }
-*/
 
