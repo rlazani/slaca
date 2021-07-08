@@ -1,5 +1,6 @@
 
 
+
 /*Coluna Esquerda*/
 
 .colunaEsquerda {
@@ -48,6 +49,7 @@
 
 .colunaDireita {
     margin-left: 220px;
+    padding-right: 10px;
 }
 
 /* Header */
@@ -66,17 +68,17 @@ header {
 }
 
 .um {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 8px;
     color: #725C5C;
     padding-top: 5px;
 }
 
 .dois {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-weight: normal;
     font-style: normal;
     font-size: 22px; 
@@ -85,10 +87,10 @@ header {
 }
 
 .tres {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-weight: normal;
     font-style: normal;
-    font-size: 12px; 
+    font-size: 14px; 
     color: #725C5C;
     line-height: 8px;
 }
@@ -101,18 +103,22 @@ header {
 
 .quatro {
     font-family: Quicksand;
-    font-weight: 400;
+    font-weight: normal;
+    font-style: normal;
     font-size: 14px;
     line-height: 1px;
     text-align: right;
+    color: #333333;
 }
 
 .cinco {
     font-family: Quicksand;
-    font-weight: 400;
+    font-style: normal;
+    font-weight: normal;
     font-size: 12px;
     line-height: 1px;
     text-align: right;
+    color: #333333;
 }
 
 .bemVindo {
@@ -127,7 +133,6 @@ header {
 }
 
 
-
 /* Content */
 
 
@@ -139,8 +144,8 @@ header {
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 22px;
-    line-height: 125%;
+    font-size: 20px;
+    line-height: 25px;
     letter-spacing: 0.05em;
     color: #ED7839;
 }
@@ -148,11 +153,14 @@ header {
 .citacao {
     margin-top: 10px;
     font-family: Roboto;
-    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
     line-height: 25px;
     color: #ED7839;
     font-weight: 500;
 }
+
 
 .buttonsDiversos {
     padding: 15px;
@@ -164,6 +172,10 @@ header {
     color: white;
 }
 
+.doi img {
+    width: 26px;
+} 
+
 
 /*Third Row*/
 
@@ -172,11 +184,17 @@ header {
 }
 
 .thirdRow img {
-    width: 98%;
+    width: 100%;
+    height: 100%;
 }
 
 .video {
     padding-left: 36px;
+}
+
+.cartaoLateral {
+    height: 550px;
+    overflow: auto;
 }
 
 .card-header {
@@ -186,25 +204,18 @@ header {
     font-weight: 500;
     font-size: 20px;
     line-height: 25px;
+    color: #4E4E4E;
 }
 
-.detalhes p {
+.titulos p, .autores p {
     font-family: Quicksand;
-    font-weight: 400;
-    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 120%;
 }
 
-.autores  {
-    font-family: Quicksand;
-    font-weight: 400;
-    font-size: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.notas {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.notas p {
     font-size: 12px;
     color: gray;
 }
@@ -250,8 +261,6 @@ header {
     border-top: none;
 }
 
-
-
 /*Discussões*/
 .discussoes {
     margin-left: 24px;
@@ -270,16 +279,35 @@ header {
     font-size: 18px;
     line-height: 21px; 
     color: #ED7839;
+    margin-left: -50px
 }
 
 .icones {
     width: 500px;
-    margin-left: 420px;
+    margin-left: 440px;
     margin-top: 50px;
     margin-bottom: -100px;
 }
 .icones img {
     width: 500px; 
+}
+
+.sabia {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #595959;
+}
+
+.topico {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 16px;
 }
 
 .temDuvida {
@@ -429,6 +457,7 @@ header {
     font-size: 12px;
     line-height: 15px;
     color: #5C5C5C;
+    margin-top: -12px;;
 }
 
 .interno .oito {
@@ -437,6 +466,7 @@ header {
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
+    color: #4D4D4D;
 }
 
 .interno .nove {
@@ -446,6 +476,19 @@ header {
     font-size: 14px;
     line-height: 19px;
     color: #757575;
+    margin-left: 15px;
+}
+
+.dots, .heart {
+    float: left;
+    margin-right: 15px;
+}
+
+.buttomLike {
+    float: left;
+    background-color: #ED7839;
+    width: 25px;
+    height: 25px;
 }
 
 .nome {
@@ -524,70 +567,127 @@ footer img {
 }
 
 .footerInfo {
-    padding-top: 10px;
+    padding-top: 30px;
+}
+
+footer p {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #5C5C5C;
 }
 
 
 /* Media Query*/
 
+
+@media (max-width: 1450px) {
+
+    body {
+        background-color: rgb(250, 216, 193);
+    }
+
+}
+
+
 @media (max-width: 1400px) {
 
-    .fotoHeader, .icones, .doi {
+    body {
+        background-color: rgb(252, 252, 215);
+    }
+
+    .fotoHeader, .icones {
         display: none;
     }
 
-    .cartaoDetalhes p {
-        font-size: 13px;
+    .cartaoLateral {
+        height: 460px;
     }
+    
 
 }
 
 
 @media (max-width: 1300px) {
-   
-    .um, .tres, .notas, .detalhesHeader {
+
+    body {
+        background-color: rgb(196, 245, 196);
+    }
+
+    .headerRow {
+        display: none;
+    }
+
+    .cartaoLateral {
+        height: 100%;
+    }
+
+    .autores {
         display: none;
     }
     
-    .dois {
-        margin-top: 30px;
-        font-size: 20px;
+    .um, .dois, .tres, .notas, .detalhesHeader {
+        display: none;
+    }
+
+    .detalhesHeader {
+        width: 99%;
     }
     
-}
+    .cartaoDetalhes  {
+        margin-top: 15px;
+        margin-left: 23px;
+        width: 98%;
+    }
 
-
-@media (max-width: 1270px) {
+    .video {
+        width: 100%;
+    }
     
-    .citacao  {
-        display: none;
+    .buttonsDiversos {
+        width: 99%;
+        text-align: center;
+    }
+
+    .titulo {
+        text-align: center;
+        width: 95%;
     }
 
     .row {
         text-align: center;
     }
 
+}
+
+
+@media (max-width: 1270px) {
+
+    body {
+        background-color: rgb(248, 211, 211);
+    }
+    
     .col {
         width: 70%;
     }
 
-    .doi, .curtir {
-        display: none;
-    }
+   
 
 }
 
 
 @media (max-width: 1200px) {
+
+    body {
+        background-color: rgb(215, 215, 247);
+    }
    
-    .autores, .icones, .divisoria, .comentario, .doi, .curtir, .expansaoComentario {
+    .autores, .icones, .divisoria, .comentario, .expansaoComentario {
         display: none;
     }
 
-    .cartaoDetalhes p {
-        font-size: 13px;
-    }
-
+    
     .dois {
         font-size: 16px;
         font-weight: bold;
@@ -598,6 +698,10 @@ footer img {
 
 
 @media (max-width: 990px) {
+
+    body {
+        background-color: rgb(255, 255, 218);
+    }
         
     .final p {
         display: none;
@@ -622,8 +726,19 @@ footer img {
     }
 
     .ghost {
-        display:inline;
-        float: left;
+        display: block;
+        background-color: #ED7839;
+    }
+
+    .menuLateral {
+        margin-left: 60px;
+        font-size: 14px;
+    }
+
+    .headerRow {
+        display:block;
+        background-color: none;
+        height: 50px;
     }
 
     .col {
@@ -634,6 +749,10 @@ footer img {
 
 
 @media (max-width: 970px) {
+
+    body {
+        background-color: rgb(211, 247, 229);
+    }
 
     .dois {
         line-height: 1.3;
