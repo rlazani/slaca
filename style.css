@@ -67,6 +67,18 @@ header {
     display: none;
 }
 
+.ghost li {
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 12px;
+    color: black;
+}
+
+.ghost .navbar-brand {
+   font-family: Roboto;
+   font-weight: normal;
+}
+
 .um {
     font-family: 'Roboto';
     font-style: normal;
@@ -207,15 +219,17 @@ header {
     color: #4E4E4E;
 }
 
-.titulos p, .autores p {
+.titulos, .autores {
     font-family: Quicksand;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 120%;
+    font-size: 16px;
+    line-height: 160%;
+    padding-bottom: 30px;
 }
 
-.notas p {
+.notas  {
+    font-family: Quicksand;
     font-size: 12px;
     color: gray;
 }
@@ -288,6 +302,7 @@ header {
     margin-top: 50px;
     margin-bottom: -100px;
 }
+
 .icones img {
     width: 500px; 
 }
@@ -330,6 +345,23 @@ header {
     color: #ED7839;
     float: left; 
 }
+
+.ghostButton {
+    display: none;
+}
+
+.stackParent {
+    position: relative;
+    margin-bottom: 70px;
+    margin-top: 50px;
+}
+
+.stackChild {
+    position: absolute;
+    top: -20px;
+    left: 550px;
+}
+
 
 .divisoria {
     height: 0px;
@@ -493,7 +525,7 @@ header {
 
 .nome {
     text-align: left;
-    margin: 10px 15px;
+    margin: 10px 15px 0px 15px;
     font-family: Quicksand;
     font-style: normal;
     font-weight: bold;
@@ -510,27 +542,33 @@ header {
     line-height: 17px;
     text-align: right;
     color: #ED7839;
-    padding-right: 100px;
+    padding-right: 50px;
     margin-top: -25px;
 }
 
-.comentarioIcone {
-    margin-top: -70px;
-    margin-left: 880px;
-
+.canto {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #ED7839;
+    padding-right: 20px;
+    margin-top: -18px;
 }
+
 .cinza {
     background-color: #F8F8F8;
     margin: -17px -16px;
     border-top: 1px solid #E7E7E7;
     border-bottom: 1px solid #E7E7E7;
-    padding: 10px 0px;
+    padding: 10px 15px;
 }
 
 .branco {
-    margin: 0px -15px;
-    font-weight: bold;
-    padding: 15px 0px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .comentario {
@@ -584,8 +622,17 @@ footer p {
 
 @media (max-width: 1450px) {
 
-    body {
-        background-color: rgb(250, 216, 193);
+    .stackChild {
+        position: absolute;
+        top: -20px;
+        left: 450px;
+    }
+
+    .icones {
+        width: 500px;
+        margin-left: 340px;
+        margin-top: 50px;
+        margin-bottom: -100px;
     }
 
 }
@@ -593,10 +640,7 @@ footer p {
 
 @media (max-width: 1400px) {
 
-    body {
-        background-color: rgb(252, 252, 215);
-    }
-
+    
     .fotoHeader, .icones {
         display: none;
     }
@@ -605,16 +649,22 @@ footer p {
         height: 460px;
     }
     
-
+    .stackParent, .stackChild {
+        display: none;
+    }
+    
+    .ghostButton {
+        display: inline;
+    }
+    
+    
+    
 }
 
 
 @media (max-width: 1300px) {
 
-    body {
-        background-color: rgb(196, 245, 196);
-    }
-
+    
     .headerRow {
         display: none;
     }
@@ -664,24 +714,16 @@ footer p {
 
 @media (max-width: 1270px) {
 
-    body {
-        background-color: rgb(248, 211, 211);
-    }
-    
+   
     .col {
         width: 70%;
     }
-
-   
 
 }
 
 
 @media (max-width: 1200px) {
 
-    body {
-        background-color: rgb(215, 215, 247);
-    }
    
     .autores, .icones, .divisoria, .comentario, .expansaoComentario {
         display: none;
@@ -699,10 +741,7 @@ footer p {
 
 @media (max-width: 990px) {
 
-    body {
-        background-color: rgb(255, 255, 218);
-    }
-        
+   
     .final p {
         display: none;
         }
@@ -750,13 +789,19 @@ footer p {
 
 @media (max-width: 970px) {
 
-    body {
-        background-color: rgb(211, 247, 229);
-    }
-
     .dois {
         line-height: 1.3;
         font-size: 13px;
     }
     
+}
+
+
+@media (max-width: 600px) {
+    
+   .discussoes h5 {
+       font-size: 18px;
+       margin-left: 5px;
+   }
+
 }

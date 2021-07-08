@@ -27,13 +27,7 @@
 
       <div class="row firstRow">
 
-        <!--Coluna do Menu 
-        <nav class="navbar navbar-expand-md fixed-top"></nav>
-        
-        -->
         <aside class="col-lg-4 colunaEsquerda fixed-top p-0">
-          
-          
           <div class="retangulo">
             <p> SLACA 2019</p>
           </div>  
@@ -50,14 +44,14 @@
               <li class="list-group-item list-group-item-action">Contato</li>
             </ul>
           </div>
-
-
         </aside>
 
         <!--Coluna da Direita-->
         <section class="col colunaDireita">
           <header class="row headerRow">
             <div class="col-lg-8 colHeader">
+
+              <!--Menu Responsivo-->
               <nav class="navbar navbar-expand-md navbar-dark fixed-top ghost">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">SLACA 2019</a>
@@ -242,7 +236,9 @@
               </div>
               <p class="card-text sabia">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? </br>
                  Deixe seus questionamentos ou sugestões para o autor!</p>
+              <div class="stackParent">
               <hr class="divisoria">  
+              <div class="stackChild">
               <a class="topico" data-bs-toggle="collapse" href="#expandeTopico" 
               aria-expanded="false" aria-controls="expandeTopico">
                 <buttom onclick="escondeAcima()" class="btn buttomDiscussao">
@@ -251,6 +247,18 @@
                   </svg>
                   criar tópico
                 </buttom>
+              </div> 
+              </div> 
+              <div class="ghostButton">
+                <a class="topico" data-bs-toggle="collapse" href="#expandeTopico" 
+                aria-expanded="false" aria-controls="expandeTopico">
+                  <buttom onclick="escondeAcima()" class="btn buttomDiscussao">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                      <path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"/>
+                    </svg>
+                    criar tópico
+                  </buttom> 
+                </div>
               </a>
             </div> 
 
@@ -332,7 +340,12 @@
               <div class="card card-body">
                 <div class="cinza">
                   <p class="nome">Adriano da Siva</p>
-                  <p class="autor">Autor</p>  
+                  <div class="canto">
+                    Autor
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#ED7839" class="bi bi-check-all check" viewBox="0 0 16 16">
+                      <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z"/>
+                    </svg>
+                  </div>  
                   <p class="comentario">
                   Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo 
                   formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise
@@ -340,7 +353,7 @@
                   </p>
                 </div>
                 <div class="branco">
-                  <br>
+                 <!-- <br> --> 
                   <p class="nome">Carlos Henrique Santos</p>
                   <p class="comentario">
                   Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo 
@@ -349,16 +362,26 @@
                 </div>  
                 <div class="cinza">
                   <p class="nome">Carmila Ferreira Andrade</p> 
-                  <p class="coautor">Coautor</p>
+                  <div class="canto">
+                    Coautor
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#ED7839" class="bi bi-check-all check" viewBox="0 0 16 16">
+                      <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z"/>
+                    </svg>
+                  </div>
                   <p class="comentario">
-                  Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se 
+                  Também interessante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se 
                   no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo 
                   </p>
-                  <br>
+                  <br> 
                 </div>
                 <div class="cinza">
                   <p class="nome">Ana Carolina</p>  
-                  <p class="coautor">Coautor</p>
+                  <div class="canto">
+                    Coautor
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#ED7839" class="bi bi-check-all check" viewBox="0 0 16 16">
+                      <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z"/>
+                    </svg>
+                  </div>
                   <p class="comentario">
                   Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo 
                   formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise
